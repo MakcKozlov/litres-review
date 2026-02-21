@@ -1,0 +1,76 @@
+/* Cards view for Dataview tables */
+.cards .dataview.table-view-table {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.5rem;
+  border: none;
+}
+
+.cards .dataview.table-view-table thead {
+  display: none;
+}
+
+.cards .dataview.table-view-table tbody {
+  display: contents;
+}
+
+.cards .dataview.table-view-table tr {
+  display: flex;
+  flex-direction: column;
+  background: var(--background-secondary);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--background-modifier-border);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cards .dataview.table-view-table tr:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cards .dataview.table-view-table td {
+  display: block;
+  border: none !important;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85em;
+}
+
+.cards .dataview.table-view-table td:first-child {
+  padding: 0;
+  text-align: center;
+  background: var(--background-primary-alt);
+}
+
+.cards .dataview.table-view-table td:first-child img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+.cards .dataview.table-view-table td:nth-child(2) {
+  font-weight: 600;
+  font-size: 0.95em;
+  padding-top: 0.8rem;
+}
+
+/* Full width content in cards pages */
+.cards .markdown-preview-sizer,
+.cards .markdown-source-view .cm-sizer {
+  max-width: 100% !important;
+  padding: 0 16px !important;
+}
+
+.cards .markdown-reading-view .markdown-preview-view {
+  max-width: 100% !important;
+}
+
+/* Hide ALL chrome in cards pages — properties, title, everything */
+.cards .metadata-container,
+.cards .metadata-properties-heading,
+.cards .metadata-add-button,
+.cards .inline-title,
+.cards .mod-header {
+  display: none !important;
+}

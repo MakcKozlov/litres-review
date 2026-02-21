@@ -274,7 +274,10 @@ book_id берётся из URL страницы книги на LitRes.
 
 ## Расписание
 
-Крон: ежедневно в **08:00 Asia/Amman** (после утреннего насмотра в 06:00).
+- **Понедельник 08:00** — книга ТОЛЬКО из раздела Маркетинг/PR/Реклама: `https://www.litres.ru/genre/marketing-pr-reklama-5048/?order=popular&showtype=text`
+- **Вторник–Воскресенье 08:00** — книга из общего раздела Бизнес: `https://www.litres.ru/genre/biznes-5003/?order=popular&showtype=text`
+
+Часовой пояс: Asia/Amman (после утреннего насмотра в 06:00).
 
 ## Промежуточные статусы
 

@@ -125,7 +125,7 @@ HTMLAnchorElement.prototype.click = function() {
 3. **Добавить источник**: `nlm source add <id> --file /tmp/litres_book/book.epub --wait`
 4. **Саммари**: `nlm notebook query <id> "Дай краткое саммари на русском. 5-7 ключевых тезисов."`
 5. **Аудио**: `nlm audio create <id> -f deep_dive --language ru -y`
-6. **Ждать**: `nlm studio status <id>` — опрашивать каждые 30 сек
+6. **Ждать**: `nlm studio status <id>` — опрашивать каждые **15 сек** (не реже!)
 7. **Скачать**: `nlm download audio <id> -o /tmp/litres_book/review.wav`
 8. **Конвертировать**: `ffmpeg -i review.wav -codec:a libmp3lame -b:a 128k review.mp3 -y`
 
